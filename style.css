@@ -240,12 +240,28 @@ width: 100%;
 }
 
 @media screen and (max-width: 576px) {
-    .skill-container, .resume-container, footer, .about-info-container{
+    .header{
+        background-image: none;
+    }
+
+    .banner, nav, nav > ul, .header, .skill-container, .resume-container, footer, .about-info-container{
         flex-direction: column;
     }
 
-    #What-i-do-description{
+    nav > ul{
+        gap: 10px;
+    }
+
+    .banner .profile-pic{
+        width: 80%;
+    }
+
+   .banner, #What-i-do-description{
         padding: 20px;
+    }
+
+    .btn-primary{
+        margin-bottom: 15px;
     }
 
     footer, .about{
@@ -267,6 +283,9 @@ width: 100%;
         padding: 30px;
     }
 
+    .btn-primary{
+        margin-bottom: 15px;
+    }
 }
 
 
